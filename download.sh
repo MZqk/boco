@@ -27,5 +27,4 @@ do
 
          perl /home/boco/lte_files_wget.pl -v $int -o $omcid  -i $fip -u $user  -p $pwssad  -d $file -s $timedate
 
-done
- 
+done 
