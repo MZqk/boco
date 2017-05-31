@@ -1,0 +1,9 @@
+d:
+cd SMS
+echo '+++++++++++++++++++++++++++++++++++++++'>>reload.log
+net stop Boco4ASms2>>reload.log
+ping -n 5 10.180.211.74
+Boco4ASmsSvr.exe>>reload.log
+net start Boco4ASms2>>reload.log
+echo '%date%%time%'>>reload.log
+exit
