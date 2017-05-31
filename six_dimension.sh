@@ -28,3 +28,4 @@ perl $DB_PATH/ReportSum/bin/foa_tpa_sts_detail_sum.pl -c tpa_mr_lte_detail_sum.c
 #perl $DB_PATH/ReportSum/bin/foa_tpa_sts_gsmabc_sum.pl -c tpa_pm_lte_serv.cfg -t 1 -s "2017-04-27 00:00:00"   -e "2017-04-28 00:00:00";
 #perl $DB_PATH/ReportSum/bin/foa_tpa_sts_gsmabc_sum.pl -c tpa_structureopt_lte_sum.cfg -t 1  -s "2017-04-27 00:00:00"   -e "2017-04-28 00:00:00";
 #perl $DB_PATH/ReportSum/bin/foa_tpa_sts_gsmabc_sum.pl -c tpa_six_dimension_sum.cfg -t 1 -s "2017-04-27 00:00:00"   -e "2017-04-28 00:00:00";                                                                                                                                                  ~                                                                                                                                
+ 
