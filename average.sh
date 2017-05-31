@@ -23,6 +23,4 @@ perl $file2 -c $cfg -u 1 -s "$daydate 00:00:00" -e "$daydate 23:59:59"
 #perl /opt/BOCO.NPM/DB/ReportSum/bin/tpa_mr_ltehubei.pl -c tla_averagehubei.cfg -u 1 -s "2017-05-22 00:00;00" -e "2017-05-22 23:59:59"
 #perl /opt/BOCO.NPM/DB/ReportSum/bin/tpa_mr_lte_servhubei.pl -c tla_averagehubei.cfg -u 1 -s "2017-05-22 00:00;00" -e "2017-05-22 23:59:59"
 #perl /opt/BOCO.NPM/DB/ReportSum/bin/tpa_mr_ltehubei.pl -c tla_averagehubei.cfg -u 0 -s "2017-05-22  00:00:00" -e "2017-05-22 00:59:59"
-#perl /opt/BOCO.NPM/DB/ReportSum/bin/tpa_mr_lte_servhubei.pl -c tla_averagehubei.cfg -u 0 -s "2017-05-22 00:00:00" -e "2017-05-22 00:59:59"
-
-
+#perl /opt/BOCO.NPM/DB/ReportSum/bin/tpa_mr_lte_servhubei.pl -c tla_averagehubei.cfg -u 0 -s "2017-05-22 00:00:00" -e "2017-05-22 00:59:59
