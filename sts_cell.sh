@@ -14,10 +14,10 @@ cfg3=tpd_sts_cell_gprs_jx.cfg
 
 for hour in $@
 do
-		for cfg in $cfg1 $cfg2 $cfg3
-        do
-				perl /opt/BOCO.NPM/DB/ReportSum/bin/tpa_cell_sum_nk_jx.pl -e '$daydate ${hour}:59:59' -c $cfg -u 0 -s '$daydate ${hour}:00:00'
-		done
+	for cfg in $cfg1 $cfg2 $cfg3
+    do
+    	perl /opt/BOCO.NPM/DB/ReportSum/bin/tpa_cell_sum_nk_jx.pl -e '$daydate ${hour}:59:59' -c $cfg -u 0 -s '$daydate ${hour}:00:00'
+	done
 done				
 
 #原汇总语句
