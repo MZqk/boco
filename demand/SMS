@@ -1,3 +1,4 @@
+rem 短信服务重启
 d:
 cd SMS
 echo '+++++++++++++++++++++++++++++++++++++++'>>reload.log
@@ -6,4 +7,21 @@ ping -n 5 10.180.211.74
 Boco4ASmsSvr.exe>>reload.log
 net start Boco4ASms2>>reload.log
 echo '%date%%time%'>>reload.log
+echo '+++++++++++++++++++++++++++++++++++++++'>>reload.log
+rem 依据报错日志判断程序是否挂死
+set today="%DATE:~0,4%%DATE:~5,2%%DATE:~8,2%"
+cd LogFile
+cd %todayFile%
+findstr "接收链路检测短信包--超时!" Send.log >nul 2>&1 && goto reload
+ping -n 10 10.180.25.205
+exit
+:reload
+ren Send.log Send.log.bak
+cd ..
+cd ..
+echo '服务连接失败'>>reload.log
+taskkill /F /IM Boco4ASmsSvr.exe
+Boco4ASmsSvr.exe
+net start Boco4ASms2
+ping -n 10 10.180.25.215
 exit
