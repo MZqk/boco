@@ -15,5 +15,5 @@ perl /opt/BOCO.NPM/DB/ReportSum/bin/Tpa_eutrancell_hour_sum.pl -c Tpa_eutrancell
 #以下为prb汇总
 
 perl /opt/BOCO.NPM/DB/ReportSum/bin/Tpa_lte_hour_ne.pl -c Tpa_eutr_prb_yunnan.cfg -s "$start"  -e "$end"
-perl /opt/BOCO.NPM/DB/ReportSum/bin/Tpa_lte_hour_sum.pl -c Tpa_eutr_prb_yunnan.cfg -s "$start"  -e "$end">>prb.sh.log
+perl /opt/BOCO.NPM/DB/ReportSum/bin/Tpa_lte_hour_sum.pl -c Tpa_eutr_prb_yunnan.cfg -s "$start"  -e "$end"
 

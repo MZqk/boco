@@ -18,13 +18,13 @@ cat /home/boco/load.conf | while read line
 
 do 
 
-        omcid=`echo ${line} | awk -F ' ' ' {print $1}'`
-        fip=`echo ${line} | awk -F ' ' ' {print $2}'`
-        user=`echo ${line} | awk -F ' ' ' {print $3}'`
-        pwssad=`echo ${line} | awk -F ' ' ' {print $4}'`
-        file=`echo ${line} | awk -F ' ' '{print $5}'`
-        int=`echo ${line} | awk -F ' ' ' {print $6}'`
+    omcid=`echo ${line} | awk -F ' ' ' {print $1}'`
+    fip=`echo ${line} | awk -F ' ' ' {print $2}'`
+    user=`echo ${line} | awk -F ' ' ' {print $3}'`
+    pwssad=`echo ${line} | awk -F ' ' ' {print $4}'`
+    file=`echo ${line} | awk -F ' ' '{print $5}'`
+    int=`echo ${line} | awk -F ' ' ' {print $6}'`
 
-         perl /home/boco/lte_files_wget.pl -v $int -o $omcid  -i $fip -u $user  -p $pwssad  -d $file -s $timedate
+    perl /home/boco/lte_files_wget.pl -v $int -o $omcid  -i $fip -u $user  -p $pwssad  -d $file -s $timedate
 
 done 
